@@ -1,0 +1,43 @@
+.content-wrap {
+    background: #FFCCE4;
+}
+
+.content {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.main {
+    padding-right: 10%;
+    padding-left: 10%;
+}
+
+.header {
+    padding-top: 38px;
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 30px;
+    line-height: 41px;
+    color: #C62582;
+}
+
+.text {
+    padding-top: 30px;
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 40px;
+    color: #C62582;
+    padding-bottom: 370px;
+}
+
+.text_link {
+    text-decoration: none;
+}
+
+.finish {
+    background-color: #FFFFFF;
+    height: 60px;
+}
