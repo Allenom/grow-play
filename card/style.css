@@ -1,0 +1,767 @@
+.main-wrap {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.path-wrap {
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 40px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    color: #000;
+}
+
+.path-back {
+    text-decoration: none;
+    color: #717171;
+}
+
+.path-back:hover {
+    color: #000;
+}
+
+/* ------------------------------------------------------------------------------------- */
+/* ---------------------------------- Доска карточки ----------------------------------- */
+/* ------------------------------------------------------------------------------------- */
+
+.desk-wrap {
+    max-width: 1440px;
+    background: linear-gradient(180deg, #9FE0FC 0%, #FFC0CB 100%);
+    margin-bottom: 40px;
+    padding-bottom: 40px;
+}
+
+.desk-title-wrap {
+    margin-left: 10%;
+    padding-top: 30px;
+    margin-bottom: 40px;
+    display: flex;
+}
+
+.title1 {
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 30px;
+    line-height: 41px;
+    color: #0D47AA;
+}
+
+.desk-title-favorite_btn {
+    margin-left: 10px;
+    margin-top: -25px;
+}
+
+.desk-title-favorite_btn:hover {
+    cursor: pointer;
+    opacity: 0.5;
+}
+
+.desk-control-wrap {
+    margin-left: 10%;
+    margin-right: 40px;
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 21px;
+}
+
+.desk-control-delete {
+    color: red;
+    text-decoration: underline;
+}
+
+.desk-control-delete:hover {
+    cursor: pointer;
+    opacity: 0.5;
+}
+
+.new-card-img {
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 21px;
+}
+
+.desk-info-wrap {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.desk-img-wrap {
+    max-width: 700px;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-bottom: 40px;
+}
+
+.desk-img {
+    max-width: 100%;
+    max-height: 100%;
+    width: 50vw;
+    min-width: 430px;
+    object-fit: contain;
+    border-radius: 15px;
+}
+
+.desk-btns-description-wrap {
+    margin-bottom: 40px;
+}
+
+.desk-btns-wrap {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+.desk-btn {
+    width: 174px;
+    height: 50px;
+    background-color: #0D47AA;
+    border-radius: 15px;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 50px;
+    color: #FFFFFF;
+}
+
+.desk-btn:hover {
+    cursor: pointer;
+    opacity: 0.5;
+}
+
+.desk-description-wrap {
+    min-width: 360px;
+    max-width: 400px;
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 21px;
+    line-height: 29px;
+    color: #0D47AA;
+}
+
+.create-btn {
+    width: 174px;
+    height: 50px;
+    margin: 0 auto;
+    background-color: #bfe4b4;
+    border-radius: 25px;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 50px;
+    color: #0D47AA;
+}
+
+.create-btn:hover {
+    cursor: pointer;
+    opacity: 0.5;
+}
+
+/* ------------------------------------------------------------------------------------- */
+/* ------------------------------------- Отзывы ---------------------------------------- */
+/* ------------------------------------------------------------------------------------- */
+
+.comments-title {
+    margin-top: 40px;
+}
+
+.comments-title {
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 25px;
+    color: #0D47AA;
+    margin-left: 10%;
+}
+
+.comments-count {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    color: #000000;
+}
+
+.comments-rating-wrap {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-left: 5%;
+    margin-right: 5%;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.comments-rating-num-wrap {
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.comments-rating-num {
+    display: block;
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 45px;
+    color: #0D47AA;
+    margin-bottom: 20px;
+}
+
+.comments-rating-progress-wrap {
+    background-color: #FFFFFF;
+    border-radius: 12px;
+    margin-bottom: 30px;
+    margin-top: 20px;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+}
+
+.comments-rating-progress-list {
+    list-style-type: none;
+}
+
+.comments-rating-progress-item {
+    display: flex;
+    margin-bottom: 5px;
+}
+
+.comments-rating-progress-item-star {
+    margin-right: 20px;
+}
+
+.comments-rating-progress-item-num {
+    margin-right: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.comments-rating-progress-item-progress {
+    border-radius: 30px;
+    margin-right: 20px;
+    width: 442px;
+    max-width: 55vw;
+}
+
+.comments-rating-progress-item-progress::-webkit-progress-bar {
+    background-color: #D9D9D9;
+    border-radius: 30px;
+}
+
+.comments-rating-progress-item-progress::-webkit-progress-value {
+    background-color: #FCD26D;
+    border-radius: 30px;
+}
+
+.comments-rating-progress-item-progress::-moz-progress-bar {
+    background-color: #FCD26D;
+    border-radius: 30px;
+}
+
+.comments-rating-progress-item-count {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.comments-btn {
+    width: 270px;
+    height: 40px;
+    background-color: #0D47AA;
+    border-radius: 15px;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 40px;
+    color: #FFFFFF;
+    margin-bottom: 30px;
+}
+
+.comments-btn:hover {
+    cursor: pointer;
+    opacity: 0.5;
+}
+
+/* ------------------------------------------------------------------------------------- */
+/* -------------------------------- Карточки отзывов ----------------------------------- */
+/* ------------------------------------------------------------------------------------- */
+
+.comment-cards-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.comment-card {
+    width: 370px;
+    background-color: white;
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-left: 20px;
+    padding-bottom: 30px;
+    border-radius: 15px;
+    margin: 10px;
+    position: relative;
+}
+
+.comment-card-username-date-wrap {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 6px;
+}
+
+.comment-card-username {
+    max-width: 230px;
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 18px;
+    color: #0D47AA;
+}
+
+.comment-card-date {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    color: #0D47AA;
+    margin-left: 10px;
+}
+
+.comment-card-text {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    margin: auto 0;
+    min-height: 90px;
+    display: flex;
+    align-items: center;
+}
+
+.comment-card-finger-up-img {
+    position: absolute;
+    right: 70px;
+    bottom: 10px;
+}
+
+.comment-card-finger-down-img {
+    position: absolute;
+    right: 25px;
+    bottom: 10px;
+}
+
+.comment-card-finger-up-img:hover,
+.comment-card-finger-down-img:hover {
+    cursor: pointer;
+    opacity: 0.5;
+}
+
+.comment-card-finger-up-count {
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    color: #82C625;
+    position: absolute;
+    right: 55px;
+    bottom: 10px;
+}
+
+.comment-card-finger-down-count {
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    color: #FF535C;
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+}
+
+.view-all-comments {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    color: #0D47AA;
+    text-align: center;
+    margin: 0 auto;
+    width: 125px;
+}
+
+.view-all-comments:hover {
+    cursor: pointer;
+    opacity: 0.5;
+}
+
+/* ------------------------------------------------------------------------------------- */
+/* --------------------------------- Оставить отзыв ------------------------------------ */
+/* ------------------------------------------------------------------------------------- */
+
+.feedback-scrollbar {
+    overflow: auto;
+}
+
+.feedback-scrollbar::-webkit-scrollbar {
+    width: 10px;
+    margin-top: 30px;
+}
+
+.feedback-scrollbar::-webkit-scrollbar-thumb {
+    background-color: #8b57f5;
+    border-radius: 30px;
+}
+
+.feedback {
+    max-width: 750px;
+    position: absolute;
+    z-index: 3;
+    top: 135px;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+    background: #623DAD;
+    border-radius: 15px;
+}
+
+.feedback-close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.feedback-close-btn:hover {
+    cursor: pointer;
+    opacity: 0.5;
+}
+
+.feedback-title {
+    margin-left: 14%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 30px;
+    color: #F9DB57;
+}
+
+.feedback-carddata-wrap {
+    display: flex;
+    flex-wrap: wrap-reverse;
+    justify-content: space-around;
+    margin-bottom: 50px;
+}
+
+.feedback-carddata-card {
+    margin-left: 20px;
+    margin-right: 20px;
+    position: relative;
+}
+
+.feedback-carddata-title {
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    color: #FFFFFF;
+}
+
+.feedback-stars-wrap {
+    display: flex;
+    justify-content: center;
+}
+
+.feedback-star {
+    margin-left: 4px;
+    margin-right: 4px;
+    margin-bottom: 46px;
+}
+
+.feedback-star:hover {
+    cursor: pointer;
+}
+
+.feedback-comment-title {
+    margin-bottom: 12px;
+    margin-left: 14%;
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #FCD26D;
+}
+
+.feedback-textarea {
+    resize: none;
+    width: 72%;
+    margin-left: 14%;
+    margin-bottom: 40px;
+    min-height: 192px;
+    border-radius: 15px;
+    padding: 15px;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+}
+
+.feedback-textarea:focus {
+    outline: none;
+}
+
+.feedback-save-btn {
+    margin-bottom: 60px;
+    width: 72%;
+    margin-left: 14%;
+    min-width: 100px;
+    height: 53px;
+    background-color: #FCD26D;
+    border-radius: 15px;
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 15px;
+    color: #623DAD;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 53px;
+}
+
+.feedback-save-btn:hover {
+    cursor: pointer;
+    opacity: 0.5;
+}
+
+/* ------------------------------------------------------------------------------------- */
+/* ------------------------------------- Карточки -------------------------------------- */
+/* ------------------------------------------------------------------------------------- */
+
+.title2 {
+    margin-left: 10%;
+    margin-top: 10px;
+    margin-bottom: 50px;
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 30px;
+    line-height: 41px;
+}
+
+.card-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-left: 8%;
+    margin-right: 8%;
+}
+
+.card-wrap {
+    margin-right: 10px;
+    margin-left: 10px;
+    transition-duration: 0.4s;
+}
+
+.card-wrap:hover {
+    transform: scale(1.05);
+}
+
+.card {
+    position: relative;
+    padding-bottom: 26px;
+}
+
+.white_background {
+    width: 218px;
+    height: 214px;
+    background: #FFFFFF;
+    border-radius: 15px;
+    padding: 6px;
+    position: absolute;
+    left: 19px;
+    top: 53px;
+    z-index: 2;
+    box-shadow: 0px 4px 4px rgba(115, 110, 227, 0.15);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+.actions {
+    width: 225px;
+    padding-left: 19px;
+}
+
+.start {
+    justify-content: space-between;
+    display: flex;
+}
+
+.finish {
+    padding-top: 20px;
+    display: inline-block;
+}
+
+.product_link {
+    text-decoration: none;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 15px;
+    /* identical to box height, or 75% */
+    color: #000000;
+    padding-top: 23px;
+}
+
+.favorite_btn {
+    border: none;
+    background-color: #FFFFFF;
+}
+
+.favorite_btn:hover {
+    cursor: pointer;
+    opacity: 0.5;
+}
+
+.stars {
+    padding-top: 7px;
+    padding-left: 3px;
+}
+
+.btn_finish {
+    width: 222px;
+    height: 43px;
+    background: #DAF4FF;
+    border-radius: 15px;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 23px;
+    color: #0D47AA;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.print {
+    margin-bottom: 12px;
+}
+
+.download {
+    margin-bottom: 60px;
+}
+
+.card-download-btn-link {
+    text-decoration: none;
+}
+
+.print:hover,
+.download:hover {
+    cursor: pointer;
+    opacity: 0.5;
+}
+
+.show-more {
+    margin: 0 auto;
+    margin-bottom: 60px;
+
+    width: 346px;
+    max-width: 100%;
+    min-width: 150px;
+    height: 53px;
+    background-color: #623DAD;
+    border-radius: 15px;
+
+    color: white;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 53px;
+}
+
+.show-more:hover {
+    cursor: pointer;
+    opacity: 0.5;
+}
+
+.bottom-text {
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 21px;
+    line-height: 29px;
+    color: #0D47AA;
+    text-align: justify;
+    margin-left: 8%;
+    margin-right: 8%;
+    margin-bottom: 60px;
+}
+
+/* ------------------------------------------------------------------------------------- */
+/* ------------------------------------- Общее ----------------------------------------- */
+/* ------------------------------------------------------------------------------------- */
+
+.elem-to-gray {
+    filter: grayscale(1)
+}
+
+.delete-elem {
+    display: none;
+}
+
+.disable-elem {
+    pointer-events: none;
+    cursor: auto;
+    opacity: 0.3;
+}
