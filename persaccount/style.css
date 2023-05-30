@@ -1,0 +1,115 @@
+.path-wrap-wrap {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.path-wrap {
+    margin-left: 10%;
+    margin-bottom: 40px;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    color: #000;
+}
+
+.path-back {
+    text-decoration: none;
+    color: #717171;
+}
+
+.path-back:hover {
+    color: #000;
+}
+
+.main-background {
+    background-color: #FFCCE4;
+    min-height: calc(100vh - 470px);
+    margin-bottom: 60px;
+    padding-top: 30px;
+    padding-bottom: 70px;
+}
+
+.main-wrap {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.title {
+    margin-left: 10%;
+    margin-bottom: 50px;
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 30px;
+    line-height: 41px;
+    color: #C62582;
+}
+
+.change-wrap {
+    margin-left: 8%;
+    margin-right: 8%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 170px;
+}
+
+.change-item {
+    margin-right: 12px;
+    margin-left: 12px;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.change-textarea-wrap {
+    position: absolute;
+    z-index: 2;
+    width: 268px;
+    height: 138px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.change-textarea {
+    display: inline-block;
+    vertical-align: top;
+    max-width: 240px;
+    margin: auto;
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    color: #FFFFFF;
+}
+
+.change-textarea:focus {
+    outline: none;
+}
+
+.change-pencil {
+    position: absolute;
+    z-index: 3;
+    right: 22px;
+    top: -10px;
+}
+
+.change-pencil:hover {
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+.logout {
+    margin-left: 10%;
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 22px;
+    color: #623DAD;
+    display: inline-block;
+}
+
+.logout:hover {
+    cursor: pointer;
+    opacity: 0.5;
+}

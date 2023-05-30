@@ -1,0 +1,8 @@
+User-agent: *
+Disallow:
+Disallow: /error404/index.php
+Disallow: /about-us/index.php
+Disallow: /persaccount/index.php
+
+Disallow: /catalog/index.php
+Disallow: /card/index.php
