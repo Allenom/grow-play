@@ -1,0 +1,259 @@
+.itc-slider__wrapper {
+    overflow: hidden;
+}
+
+.itc-slider__items {
+    display: flex;
+    transition: transform .5s;
+    will-change: transform;
+    margin-bottom: 40px;
+}
+
+.itc-slider__transition-none {
+    transition: none
+}
+
+.itc-slider__item {
+    flex: 0 0 100%;
+    max-width: 100%;
+    user-select: none;
+    will-change: transform
+}
+
+.itc-slider__control-panel {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 60px;
+}
+
+.itc-slider__btn {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.itc-slider__btn:hover {
+    opacity: 0.5;
+}
+
+.itc-slider__indicators {
+    display: flex;
+    justify-content: center;
+    margin: 0 15%;
+    padding-left: 0;
+    list-style: none
+}
+
+.itc-slider__indicator {
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+    margin: auto 8px;
+    background-color: rgba(13, 71, 170, 0.5);
+    cursor: pointer
+}
+
+.itc-slider__indicator_active {
+    background-color: rgb(13, 71, 170)
+}
+
+.container {
+    max-width: 1160px;
+    margin: 0 auto;
+}
+
+.itc-slider__item {
+    flex: 0 0 25%;
+    max-width: 25%;
+    height: 380px;
+    display: flex;
+    background-color: transparent;
+    justify-content: center;
+}
+
+.itc-slider__item3 {
+    flex: 0 0 33.3333333333333%;
+    max-width: 33.3333333333333%;
+}
+
+.itc-slider__item2 {
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+
+.itc-slider__item1 {
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+
+/* на маленьких экранах (ширина меньше 600px) 1 слайд */
+@media (max-width: 600px) {
+    .itc-slider__item {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
+
+/* на средних экранах (ширина больше 600px) 2 слайда */
+@media (min-width: 600px) {
+    .itc-slider__item {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+
+    .itc-slider__item1 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
+
+/* на средних экранах (ширина больше 900px) 3 слайда */
+@media (min-width: 900px) {
+    .itc-slider__item {
+        flex: 0 0 33.3333333333%;
+        max-width: 33.3333333333%;
+    }
+
+    .itc-slider__item2 {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+
+    .itc-slider__item1 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
+
+/* на больших экранах (ширина больше 1200px) 4 слайда */
+@media (min-width: 1200px) {
+    .itc-slider__item {
+        flex: 0 0 25%;
+        max-width: 25%;
+    }
+
+    .itc-slider__item3 {
+        flex: 0 0 33.3333333333333%;
+        max-width: 33.3333333333333%;
+    }
+
+    .itc-slider__item2 {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+
+    .itc-slider__item1 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
+
+.catalog-card-background-white {
+    width: 228px;
+    height: 228px;
+    background: #ffffff;
+    border-radius: 15px;
+    padding: 6px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.catalog-card-img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+.catalog-card-img-name {
+    position: absolute;
+    z-index: 2;
+    top: 3px;
+    left: 20px;
+    color: black;
+}
+
+.catalog-card-delete {
+    position: absolute;
+    z-index: 2;
+    top: 6px;
+    right: 6px;
+}
+
+.catalog-card-delete:hover {
+    cursor: pointer;
+    opacity: 0.5;
+}
+
+.catalog-card-title,
+.catalog-card-new-title,
+.catalog-card-new-btn {
+    height: 90px;
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 30px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.catalog-card-new-title {
+    height: 60px;
+}
+
+.catalog-card-new-btn {
+    height: 30px;
+    border-radius: 15px;
+    border: 1px solid white;
+}
+
+.catalog-card-new-btn:hover {
+    cursor: pointer;
+    opacity: 0.5;
+}
+
+.catalog-card-link {
+    text-decoration: none;
+    display: block;
+}
+
+.catalog-cards {
+    width: 270px;
+    height: 380px;
+    margin: 10px;
+    border-radius: 15px;
+    padding: 21px;
+    transition-duration: 0.4s;
+    position: relative;
+}
+
+/* .catalog-cards:hover {
+    transform: scale(1.05);
+} */
+
+.catalog-cards-transform:hover {
+    transform: scale(1.05);
+}
+
+.catalog-card-0 {
+    background-color: #0AC2E0;
+}
+
+.catalog-card-1 {
+    background-color: #736EE3;
+}
+
+.catalog-card-2 {
+    background-color: #FFA8CD;
+}
+
+.catalog-card-3 {
+    background-color: #5CCF54;
+}

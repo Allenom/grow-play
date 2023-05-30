@@ -1,0 +1,30 @@
+.footer-wrap {
+    background-color: #9FE0FC;
+    padding-top: 65px;
+    padding-bottom: 65px;
+    padding-left: 12.5%;
+}
+
+.footer-list {
+    max-width: 1440px;
+    margin: 0 auto;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer-item {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    width: 197px;
+}
+
+.footer-link {
+    text-decoration: none;
+    color: #0C47AA;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 16px;
+    line-height: 20px;
+}

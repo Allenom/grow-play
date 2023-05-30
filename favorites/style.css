@@ -1,0 +1,234 @@
+.title-wrap {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.title {
+    margin-left: 10%;
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 30px;
+    color: #623CAD;
+    margin-bottom: 60px;
+}
+
+.chooseall-wrap {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding-left: 8%;
+    display: flex;
+    align-items: center;
+    margin-bottom: 32px;
+}
+
+.chooseall-text {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    color: #623CAD;
+    margin-left: 58px;
+}
+
+.chooseall-text:hover,
+.chooseall-btn:hover {
+    cursor: pointer;
+    opacity: 0.5;
+}
+
+.content-wrap {
+    background-color: #C5EDFF;
+    min-height: calc(100vh - 580px);
+    margin-bottom: 60px;
+    padding-top: 20px;
+    padding-bottom: 80px;
+}
+
+.content {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding-left: 8%;
+    padding-right: 400px;
+}
+
+/* ------------------------------------------------------------------------------------- */
+/* ------------------------------------- Итого ----------------------------------------- */
+/* ------------------------------------------------------------------------------------- */
+
+.total {
+    width: 270px;
+    background-color: #623CAD;
+    border-radius: 15px;
+    padding-top: 50px;
+    padding-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    right: 10%;
+    /* bottom: 10px; */
+}
+
+/* на экранах шириной меньше 600px */
+@media (max-width: 820px) {
+    .total {
+        position: static;
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+}
+
+.total-count {
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 25px;
+    color: #FFFFFF;
+    margin-bottom: 30px;
+}
+
+.total-btn {
+    width: 174px;
+    height: 43px;
+    background-color: #FFFFFF;
+    border-radius: 15px;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 43px;
+    color: #623CAD;
+    margin-bottom: 20px;
+}
+
+.total-btn:hover {
+    cursor: pointer;
+    opacity: 0.5;
+}
+
+/* ------------------------------------------------------------------------------------- */
+/* ------------------------------- Избранные карточки ---------------------------------- */
+/* ------------------------------------------------------------------------------------- */
+
+.favorite-card {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 670px;
+    justify-content: space-around;
+    margin-bottom: 90px;
+}
+
+.favorite-card-part1 {
+    display: flex;
+}
+
+.favorite-card-check-mark {
+    background-color: #FFFFFF;
+    width: 44px;
+    height: 44px;
+    border-radius: 22px;
+    margin-right: 50px;
+}
+
+.favorite-card-check-mark:hover {
+    cursor: pointer;
+    opacity: 0.5;
+}
+
+.favorite-card-img {
+    margin-left: 20px;
+    margin-right: 20px;
+    position: relative;
+}
+
+.white_background {
+    width: 218px;
+    height: 214px;
+    background: #FFFFFF;
+    border-radius: 15px;
+    padding: 6px;
+    position: absolute;
+    left: 19px;
+    top: 53px;
+    z-index: 2;
+    box-shadow: 0px 4px 4px rgba(115, 110, 227, 0.15);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+.favorite-card-part2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 15px;
+}
+
+.favorite-card-title {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.favorite-card-count-bin {
+    display: flex;
+}
+
+.favorite-card-count {
+    display: flex;
+    height: 44px;
+    background-color: #FFFFFF;
+    border-radius: 15px;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 25px;
+    align-items: center;
+    color: #623CAD;
+    margin-right: 80px;
+}
+
+.favorite-card-count-btn {
+    width: 40px;
+}
+
+.favorite-card-count-num {
+    width: 60px;
+}
+
+.favorite-card-count-btn:hover,
+.favorite-card-bin:hover {
+    cursor: pointer;
+    opacity: 0.5;
+}
+
+
+
+
+
+.delete-elem {
+    display: none;
+}
+
+.hide-elem {
+    visibility: hidden;
+}
+
+.disable-elem {
+    pointer-events: none;
+    cursor: auto;
+    opacity: 0.3;
+}
