@@ -1,5 +1,5 @@
 'use strict'
-
+// это пробная строка, для фиксации изменений на GitHub
 const directoryCardsImg = "../cardsimg/";
 const cardsSum = 20; // Количество карточек, подгружаемых за один раз
 const commentsSum = 3; // Количество отзывов, подгружаемых при открытии страницы
