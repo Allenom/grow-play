@@ -44,7 +44,12 @@
     </div>
     <div class="finish"></div>
 
-    <?php include '../footer/index.php'; ?>
+    
+    <?php 
+    $footer_class = "footer-while footer_left ";
+    include '../footer/index.php'; 
+?>
+
 </body>
 
 </html>

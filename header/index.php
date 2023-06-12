@@ -103,21 +103,24 @@
 
     <header class="header-content">
         <div class="header-logo">
-            <div><a href="../main"><img src="../header/img/logo.svg" alt="logo Расту, играя!"></a></div>
-            <p>Раннее развитие малыша</p>
+            <div><a href="../main"><img src="../header/img/Logo_desktop_header.svg" alt="logo Расту, играя!"></a></div>
+            <!-- <p>Раннее развитие малыша</p> -->
         </div>
         <div class="header-list">
+        <div class="header-item" id="header-catalog-btn"><img src="../header/img/search(1).svg" alt="0" id="header-catalog-btn-img">
+                <span class="header-item-title" id="header-catalog-btn-text"></span>
+            </div>
             <div class="header-item header-delete-elem"><img src="../header/img/search.svg" alt="0">
-                <span class="header-item-title">Поиск</span>
+                <span class="header-item-title"></span>
             </div>
-            <div class="header-item" id="header-catalog-btn"><img src="../header/img/catalog.svg" alt="0" id="header-catalog-btn-img">
-                <span class="header-item-title" id="header-catalog-btn-text">Каталог</span>
+            <div class="header-item" id="header-catalog-btn"><img src="../header/img/Frame 2647.svg" alt="0" id="header-catalog-btn-img">
+                <span class="header-item-title" id="header-catalog-btn-text"></span>
             </div>
-            <div class="header-item" id="header-login-name-btn"><img src="../header/img/login.svg" alt="0">
-                <span class="header-item-title" id="header-item-title-name">Войти</span>
+            <div class="header-item" id="header-login-name-btn"><img src="../header/img/Group.svg" alt="0">
+                <span class="header-item-title" id="header-item-title-name"></span>
             </div>
-            <div class="header-item" id="header-login-favorites-btn"><img src="../header/img/favourites.svg" alt="0">
-                <span class="header-item-title" id="header-item-title-favorites">Избранное</span>
+            <div class="header-item" id="header-login-favorites-btn"><img src="../header/img/Vector (6).svg" alt="0">
+                <span class="header-item-title" id="header-item-title-favorites"></span>
             </div>
         </div>
     </header>
