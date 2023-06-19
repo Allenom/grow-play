@@ -1,46 +1,134 @@
-.content-wrap {
-    background: #9EDDFC;
+* {
+    margin: 0 auto;
+    padding: 0 auto;
+    box-sizing: border-box;
+
+}
+.content-wrap{
+    max-width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 auto;
+
 }
 
 .content {
-    max-width: 1440px;
-    margin: 0 auto;
-}
-
-.box {
-    font-family: 'Open Sans', sans-serif;
-    font-style: normal;
-    color: #0D47AA;
+    background: #9FE0FC;
+    border-radius: 0px 0px 20px 20px;
 }
 
 .main {
-    padding-right: 10%;
-    padding-left: 10%;
+
+    padding-right: 10.5%;
+    padding-left: 10.5%;
 }
 
-.main_title {
-    padding-top: 38px;
-    padding-bottom: 31px;
-    font-weight: 800;
-    font-size: 30px;
-    line-height: 41px;
-}
-
-.subtitle {
-    font-weight: 800;
-    font-size: 24px;
-    line-height: 33px;
-    padding-bottom: 20px;
-}
-
-.text {
-    font-weight: 400;
-    font-size: 24px;
+.header {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 44px;
     line-height: 40px;
+    color: #0D47AA;
+    padding-top: 60px;
     padding-bottom: 40px;
 }
+.subtitle{
+    font-size: 20px; 
+    color: #0D47AA;
+    padding-bottom:20px; 
+    font-weight:800;
+    line-height:24px;
+}
+.text{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 25px;
+    color: #0D47AA;
+    padding-bottom: 20px;
+}
+p{
+    padding-bottom: 20px;
+}
+.padding{
+    padding-bottom: 40px;
+}
+.text_link {
+    text-decoration: none;
+    font-weight: 600;
+}
+.ol-list{
+    padding-left: 15px;
+    padding-bottom: 80px;
+    font-size: 18px;
+     line-height: 25px;
+}
 
-.finish {
-    background-color: #FFFFFF;
-    /* height: 60px; */
+
+
+/* Адаптив */
+
+@media screen and (max-width: 1920px){
+.main{
+        padding-left: 200px;
+        padding-right: 200px;
+    }
+}
+
+
+
+
+@media screen and (max-width: 1024px){
+    .main{
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+    .ol-list{
+        padding-bottom: 60px;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .main{
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+    .ol-list{
+        padding-bottom: 60px;
+    }
+    .header{
+        
+        font-size: 32px;
+    }
+    .padding{
+        padding-bottom: 40px;
+    }
+    .ol-list{
+        font-size: 16px;
+    }
+}
+@media screen and (max-width: 360px){
+    .main{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .ol-list{
+        font-size: 16px;
+        padding-bottom: 42px;
+    }
+    .header{
+    
+        font-size: 24px;
+    }
+    .padding{
+        padding-bottom: 20px;
+    }
+    .subtitle{
+        font-size: 18px;
+    }
+    p{
+        font-size: 16px;
+    }
 }
