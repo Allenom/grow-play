@@ -230,6 +230,124 @@
 /* ------------------------------------------------------------------------------------- */
 
 
+.header-search-background {
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 98;
+}
+
+.header-search {
+    background-color: #9FE0FC;
+    border-radius: 0px 0px 20px 20px;
+    position: absolute;
+    z-index: 99;
+    width: 100%;
+    /* left: 10vw; */
+    max-width: 1440px;
+    min-height: 550px;
+    /* display: flex; */
+    padding-top: 40px;
+    padding-left: 9.6%;
+    padding-right: 9.6%;
+    /* padding-bottom: 40px; */
+    -webkit-animation: scale-in-ver-top 0.6s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation: scale-in-ver-top 0.6s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+.header-search-string {
+    background-color: #fff;
+    min-height: 60px;
+    width: 100%;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.header-search-input {
+    border: none;
+    margin-left: 25px;
+    margin-right: 25px;
+    flex-grow: 1;
+    word-wrap: break-word;
+    overflow: hidden;
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 30px;
+    color: #0D47AA;
+}
+
+.header-search-input:focus {
+    border: none;
+    outline: none;
+}
+
+.header-search-input-default {
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 30px;
+    color: #BEC3CB;
+}
+
+.header-search-btns {
+    min-width: 173px;
+}
+
+.header-search-find-btn {
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+.header-search-find-btn:hover {
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+.header-search-close-btn {
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+.header-search-close-btn:hover {
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+.header-search-option-wrap {
+    margin-bottom: 30px;
+}
+
+.header-search-option {
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 30px;
+    color: #0D47AA;
+}
+
+.header-search-option:hover {
+    opacity: 0.7;
+}
+
+.header-search-none {
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 140%;
+    color: #0D47AA;
+}
+
 /* ------------------------------------------------------------------------------------- */
 /* ----------------------------------------- login ------------------------------------- */
 /* ------------------------------------------------------------------------------------- */

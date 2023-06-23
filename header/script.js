@@ -1,5 +1,7 @@
 'use strict'
 
+const countSearchQuery = 6; //Количество отражаемых поисковых запросов
+
 // ----------------------- GET-запросы --------------------------
 
 // ------------------- Admin / User / Guest ---------------------
@@ -123,6 +125,19 @@ async function createCatalog1Item(title) {
     }
 }
 
+// -------------------------- Search ----------------------------
+async function getSearchList() {
+    const response = await fetch('../server.php?search=getlist');
+    if (response.ok) {
+        const json = await response.json();
+        return json
+    } else {
+        alert("Ошибка HTTP: " + response.status);
+    }
+}
+
+
+
 // ---------------------
 
 //-------------------------------------
@@ -154,6 +169,19 @@ function formCatalogPart3(catalog3Id, catalog3Title) {
     return `<div class="header-catalog-item-wrap">
     <a href="../catalog?level=3&id=${catalog3Id}" class="header-catalog-item-link"><div class="header-catalog-item" id="header-catalog3-item" type="text" catalog3Id=${catalog3Id}>${catalog3Title}</div></a>
     </div>`
+}
+
+function formSearchList(level, id, title) {
+    return `<div class="header-search-option-wrap">
+    <a class="header-search-option" href="../catalog?level=${level}&id=${id}">${title}</a>
+    </div>`
+}
+
+function formSearchNone() {
+    return `<div class="header-search-none">
+    <p>По вашему запросу ничего не нашлось.</p>
+    <p>Попробуйте поискать по-другому или воспользуйтесь каталогом в меню сайта.</p>
+</div>`
 }
 
 getVisitor().then(visitor => {
@@ -670,6 +698,68 @@ getVisitor().then(visitor => {
     })
 
 
+    /* ------------------------------------------------------------------------------------- */
+    /* ---------------------------------------- search ------------------------------------- */
+    /* ------------------------------------------------------------------------------------- */
+
+    // ---------------- Всплывающее окно поиска открывается и закрывается -----------------
+
+    const elemSearchWrap = document.querySelector('#header-search-wrap')
+    const elemSearchBtn = document.querySelector('#header-search-btn')
+    const elemSearchCloseBtn = document.querySelector('#header-search-close-btn')
+    const elemSearchBackground = document.querySelector('#header-search-background')
+    const elemSearchList = document.querySelector('#header-search-options')
+    const elemSearchInput = document.querySelector('#header-search-input')
+
+    elemSearchBtn.addEventListener('click', () => {
+        console.log('тыцнули поиск')
+        elemSearchList.innerHTML = ""
+        elemSearchWrap.classList.remove('header-delete-elem')
+        getSearchList().then(searchList => {
+            console.log(searchList)
+            const searchListPop = searchList[0]
+            const searchListAll = searchList[1]
+            for (let i = 0; i < searchListPop.length; i++) {
+                elemSearchList.insertAdjacentHTML('beforeend', formSearchList(searchListPop[i].level, searchListPop[i].id, searchListPop[i].title))
+            }
+
+            elemSearchInput.addEventListener('click', () => {
+                elemSearchInput.classList.remove('header-search-input-default')
+            })
+
+            elemSearchInput.addEventListener('onblur', () => {
+                elemSearchInput.classList.add('header-search-input-default')
+            })
+
+            elemSearchInput.addEventListener('input', () => {
+                elemSearchList.innerHTML = ""
+                let countSQ = 0
+                for (let i = 0; i < searchListAll.length && countSQ < countSearchQuery; i++) {
+                    if (searchListAll[i].title.toLowerCase().includes(elemSearchInput.value.toLowerCase())) {
+                        elemSearchList.insertAdjacentHTML('beforeend', formSearchList(searchListAll[i].level, searchListAll[i].id, searchListAll[i].title))
+                        countSQ++
+                    }
+                }
+                if (countSQ == 0) {
+                    elemSearchList.insertAdjacentHTML('beforeend', formSearchNone())
+                }
+            })
+        })
+            .catch(console.error)
+    })
+
+    //------------------ Закрытие окна поиска ----------------------
+    elemSearchCloseBtn.addEventListener('click', () => {
+        elemSearchWrap.classList.add('header-delete-elem')
+    })
+
+    elemSearchBackground.addEventListener('click', () => {
+        elemSearchWrap.classList.add('header-delete-elem')
+    })
+
+    window.addEventListener('scroll', () => {
+        elemSearchWrap.classList.add('header-delete-elem')
+    })
 
 })
     .catch(console.error)
