@@ -19,6 +19,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+
 
     <link rel="icon" href="../favicon.svg" type="image/x-icon">
 </head>
@@ -35,24 +37,34 @@
 
     <div class="main-background">
         <main class="main-wrap">
-            <h1 class="title">Личные данные</h1>
+            <h1 class="title">Личный кабинет</h1>
             <section class="change-wrap">
                 <div class="change-item">
-                    <div class="change-textarea-wrap">
+                    <!-- <div class="change-textarea-wrap">
                         <div class="change-textarea" id="change-name-textarea" contenteditable="true"></div>
+                    </div> -->
+                    <!-- <img src="./img/background_ellipse.svg" alt="ellipse">
+                    <img src="./img/pencil.svg" alt="/" class="change-pencil" id="change-name-pencil"> -->
+                       <img src="./img/chicken.svg" alt="chick">
+                    
+                    <div class="change_box">
+                        <div class="arrow_pic"> <img src="./img/arrow.png" alt="arrow"></div>
+                        <div class="background_box">
+                            <button class="btn_information">Личные данные</button>
+                            <button class="btn_information">Изменить пароль</button>
+                            <button class="btn_information" id="logout">Выйти из аккаунта</button>
+                        </div>
                     </div>
-                    <img src="./img/background_ellipse.svg" alt="ellipse">
-                    <img src="./img/pencil.svg" alt="/" class="change-pencil" id="change-name-pencil">
                 </div>
-                <div class="change-item">
+                <!-- <div class="change-item">
                     <div class="change-textarea-wrap">
                         <div class="change-textarea" id="change-email-textarea" contenteditable="true"></div>
                     </div>
                     <img src="./img/background_ellipse.svg" alt="ellipse">
                     <img src="./img/pencil.svg" alt="/" class="change-pencil" id="change-email-pencil">
-                </div>
+                </div> -->
             </section>
-            <h2 class="logout" id="logout">Выйти из личного кабинета</h2>
+            <!-- <h2 class="logout" id="logout">Выйти из личного кабинета</h2> -->
         </main>
     </div>
 

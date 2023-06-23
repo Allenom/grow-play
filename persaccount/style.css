@@ -1,115 +1,155 @@
 .path-wrap-wrap {
-    max-width: 1440px;
-    margin: 0 auto;
+  max-width: 1440px;
+  margin: 0 auto;
 }
 
 .path-wrap {
-    margin-left: 10%;
-    margin-bottom: 40px;
-    font-family: 'Roboto', sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    color: #000;
+  margin-left: 10%;
+  margin-bottom: 40px;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  color: #000;
 }
 
 .path-back {
-    text-decoration: none;
-    color: #717171;
+  text-decoration: none;
+  color: #717171;
 }
 
 .path-back:hover {
-    color: #000;
+  color: #000;
 }
 
 .main-background {
-    background-color: #FFCCE4;
-    min-height: calc(100vh - 470px);
-    margin-bottom: 60px;
-    padding-top: 30px;
-    padding-bottom: 70px;
+  /* background-color: #FFCCE4; */
+  min-height: calc(100vh - 470px);
+  /* margin-bottom: 60px; */
+  padding-top: 30px;
+  /* padding-bottom: 70px; */
+  margin-bottom: 80px;
 }
 
 .main-wrap {
-    max-width: 1440px;
-    margin: 0 auto;
+  max-width: 1440px;
+  margin: 0 auto;
 }
 
 .title {
-    margin-left: 10%;
-    margin-bottom: 50px;
-    font-family: 'Open Sans', sans-serif;
-    font-style: normal;
-    font-weight: 800;
-    font-size: 30px;
-    line-height: 41px;
-    color: #C62582;
+  margin-left: 10%;
+  margin-bottom: 60px;
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 120%;
+  /* color: #c62582; */
+  color: #5ccf54;
 }
 
 .change-wrap {
-    margin-left: 8%;
-    margin-right: 8%;
-    display: flex;
-    flex-wrap: wrap;
-    margin-bottom: 170px;
+  /* margin-left: 8%; */
+  /* margin-right: 8%; */
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 80px;
 }
 
 .change-item {
-    margin-right: 12px;
-    margin-left: 12px;
-    margin-bottom: 20px;
-    position: relative;
+  /* margin-right: 12px; */
+  margin-left: 215px;
+  /* margin-bottom: 20px; */
+  position: relative;
+  display: flex;
 }
 
-.change-textarea-wrap {
-    position: absolute;
-    z-index: 2;
-    width: 268px;
-    height: 138px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+/* .change-textarea-wrap {
+  position: absolute;
+  z-index: 2;
+  width: 268px;
+  height: 138px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+} */
+
+/* .change-textarea {
+  display: inline-block;
+  vertical-align: top;
+  max-width: 240px;
+  margin: auto;
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  color: #ffffff;
+} */
+
+/* .change-textarea:focus {
+  outline: none;
+} */
+
+/* .change-pencil {
+  position: absolute;
+  z-index: 3;
+  right: 22px;
+  top: -10px;
+} */
+
+/* .change-pencil:hover {
+  cursor: pointer;
+  opacity: 0.8;
+} */
+
+/* .logout {
+  margin-left: 10%;
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 22px;
+  color: #623dad;
+  display: inline-block;
+} */
+
+/* .logout:hover {
+  cursor: pointer;
+  opacity: 0.5;
+} */
+.change_box {
+  display: flex;
+  position: absolute;
+  margin-left: 188px;
 }
 
-.change-textarea {
-    display: inline-block;
-    vertical-align: top;
-    max-width: 240px;
-    margin: auto;
-    font-family: 'Open Sans', sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 22px;
-    color: #FFFFFF;
+.arrow_pic {
+  margin-top: 191px;
 }
 
-.change-textarea:focus {
-    outline: none;
+.background_box {
+  width: 597px;
+  height: 376px;
+  border-radius: 20px;
+  background: #67d9ff;
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  flex-direction: column;
+  padding-top: 78px;
 }
-
-.change-pencil {
-    position: absolute;
-    z-index: 3;
-    right: 22px;
-    top: -10px;
-}
-
-.change-pencil:hover {
-    cursor: pointer;
-    opacity: 0.8;
-}
-
-.logout {
-    margin-left: 10%;
-    font-family: 'Open Sans', sans-serif;
-    font-style: normal;
-    font-weight: 800;
-    font-size: 22px;
-    color: #623DAD;
-    display: inline-block;
-}
-
-.logout:hover {
-    cursor: pointer;
-    opacity: 0.5;
+.btn_information {
+  width: 382px;
+  height: 60px;
+  background: #ffffff;
+  border-radius: 100px;
+  border: none;
+  margin-bottom: 20px;
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+  color: #0d47aa;
+  cursor: pointer;
 }
