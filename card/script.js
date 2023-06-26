@@ -19,7 +19,7 @@ elemNewCatalog1Id.classList.add('delete-elem')
 elemNewCatalog2Id.classList.add('delete-elem')
 elemNewCatalog3Id.classList.add('delete-elem')
 
-
+//
 
 // console.log('----------------------------------')
 // console.log(`ID карточки: ${cardId}`)
