@@ -1,68 +1,326 @@
+*{
+    padding: 0 auto;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
 .content-wrap {
-    background: #9EDDFC;
+        width: 1440px;
+        height: 673px;
+        max-height: 100%;
+        margin: 0 auto;
+        padding: 0 auto;
+        max-width: 100%;
+    
 }
 
 .content {
-    max-width: 1440px;
-    margin: 0 auto;
+    background: #FFFFFF; 
+
 }
 
 .main {
-    padding-right: 10%;
-    padding-left: 10%;
+    padding-right: 10.5%;
+    padding-left: 10.5%;
+
 }
 
-.header {
-    padding-top: 70px;
-    font-family: 'Open Sans', sans-serif;
+.title {
+    font-family: 'Montserrat';
     font-style: normal;
-    font-weight: 800;
-    font-size: 30px;
-    line-height: 41px;
-    color: #751119;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 120%;
+    color: #5CCF54;
+    padding-top: 60px;
+
+}
+.wrap{
+    width: 850px;
+    max-width: 100%;
+   height: 100%;
 }
 
-.text {
-    padding-top: 40px;
-    font-family: 'Open Sans', sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 24px;
-    line-height: 35px;
-    color: #751119;
-    padding-bottom: 70px;
+.img{
+    position: relative;
+    margin-top: 60px;
+
 }
 
-.back_btn-link {
-    text-decoration: none;
+
+.img-penguin{
+  position: absolute;
+    top: 0px;
+    left: -5px;
+    width: 320px;
+    max-width: 100%;
+    margin: 0 auto;
+
+
 }
 
-.back__btn {
-    padding-bottom: 255px;
+.background-img{
+    position: absolute;
+    left: 20%;
+    text-align: left center;
+    padding-left: 0px;
+    max-width: 100%;
+    width: 578px;
+    height: 297px;
+    max-width: 100%;
+    display: block;
 }
 
-.back_btn {
-    width: 346px;
-    height: 53px;
-    color: #FFFFFF;
-    background: #751119;
-    border-radius: 15px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: 'Roboto';
+
+.text { 
+    font-family: 'Montserrat';
     font-style: normal;
     font-weight: 600;
-    font-size: 20px;
-    line-height: 23px;
+    font-size: 32px;
+    line-height: 160%;
+    color: #FFFFFF;
+    position: absolute;
+    width: 395px;
+    max-width: 100%;
+    left: 33%;
+    top: 40px;
 }
 
-.back_btn:hover {
-    opacity: 0.5;
-}
 
-.finish {
-    background-color: #FFFFFF;
+.btn{
+    background: #F7822B;
+    border-radius: 100px;
+    border: none;
+    position: absolute;
+    width: 206px;
     height: 60px;
-    width: 100%;
+    max-width: 100%;
+    left: 46%;
+    margin-top: 25%;
+    margin-bottom: 80px;
 }
+
+
+.text-link{
+    font-family: 'Montserrat';
+font-style: normal;
+font-weight: 600;
+font-size: 20px;
+line-height: 24px;
+text-align: center;
+
+}
+
+.link{
+    text-decoration: none;
+    color: #FFFFFF;
+  
+}
+/* Адаптив */
+
+
+
+
+@media (min-width:320px) and (max-width:1024px) {
+   .background-img{
+    display: none;
+   }
+      .img{
+            background-image: url("./img/фон\ 2.png");
+         
+            width: 559px;
+            height: 339px;
+           
+            padding-left: 200px;
+            padding-top: 200px;
+            max-width: 100%;
+             background-size: 100% 100%;
+     }  
+}
+
+
+@media screen and (min-width: 1920px){
+    .main {
+        padding-right: 200px;
+        padding-left: 200px;
+    
+    } 
+    .btn{
+        margin-top: 370px;
+        margin-bottom: 131px;
+    }
+    .content-wrap{
+        height:740px;
+          max-height: 100%;
+      }
+}
+
+
+
+@media screen and (max-width: 1024px){
+    .content-wrap {
+        width: 1440px;
+        height: 920px;
+        margin: 0 auto;
+        padding: 0 auto;
+        max-width: 100%;}
+    
+    
+    
+    
+    .main {
+        padding-right: 40px;
+        padding-left: 40px;
+    
+    } 
+    .wrap{
+        width: 560px;
+    max-width: 100%;
+    height: 100%;
+    max-height: 100%;
+    margin: 0 auto;
+    padding: 0 auto;
+}
+
+    .img-penguin{
+          top: 250px;
+          left: 38%;
+          width: 250px;
+          max-width: 100%;
+        transform: rotate(40deg);
+      }
+     
+     
+      .text { 
+          width: 395px;
+          max-width: 100%;
+          left: 14.7%;
+          top: 44px;
+      }
+
+      .btn{
+      margin-top: 200px;
+      left: 0;
+      right: 0;
+      margin-bottom: 186px;
+      }
+}
+
+@media screen and (max-width: 768px){
+    .content-wrap{
+      height: 700px;
+        max-height: 100%;
+    }
+    .main {
+        padding-right: 40px;
+        padding-left: 40px;
+
+    
+    } 
+     .title{
+        font-size: 28px;
+    }
+     .img{
+     margin-top: 60px;
+     width: 0;
+     height: 0;
+     padding-left: 390px;
+     padding-top: 238px;
+     max-width: 100%;
+     background-size: 100% 100%;
+
+    }
+     .img-penguin{
+     top: 180px;
+     left: 39%;
+     width: 162px;
+     max-width: 100%;
+     transform: rotate(40deg); 
+    }
+   .btn{
+    margin-top: 18%;
+    margin-bottom: 110px;
+    padding: 15px, 41px, 15px, 41px;
+    }
+   
+   .text{
+     font-size: 22px;
+     left: 15%;
+     width: 270px;
+     height: 140px;
+     max-width: 100%;
+     line-height: 35px;
+     top: 30px;
+
+    }
+
+}
+
+
+ @media screen and (max-width: 360px){
+    .content-wrap{
+        height: 511px;
+        max-height: 100%;
+    }
+    
+    .main {
+       padding-left: 20px;
+       padding-right:  20px;
+       height: 383px;
+       max-height: 100%; 
+    
+    } 
+     .title{
+        font-size: 24px;
+        padding-top: 40px;
+    }
+     .img{
+     margin-top: 0px;
+     width: 0;
+     height: 0;
+     padding-left: 320px;
+     padding-top: 187px;
+     max-width: 100%;
+     margin-bottom: 0px;
+     background-size: 100% 100%;
+}
+
+
+.img-penguin{
+    top: 130px;
+    left: 34%;
+    width: 180px;
+    max-width: 100%;
+    transform: rotate(40deg); 
+    }
+
+
+    .btn{
+    margin-top: 37%;
+    margin-bottom: 54px;
+    width: 164px;
+    height: 44px;
+    Padding: 16px, 32px, 16px, 32px;
+    padding: 0px;
+}
+
+
+    .text{
+  font-size: 22px;
+  height: 140px;
+  width: 270px;
+  left: 9.7%;
+  top: 18px;
+  padding: 0 auto;
+  line-height: 32px;
+ 
+}
+    .text-link{
+        font-size: 16px;
+    }
+    .wrap{
+        padding-top: 30px;
+        
+       
+    }
+   
+} 
