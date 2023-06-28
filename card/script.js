@@ -19,7 +19,7 @@ elemNewCatalog1Id.classList.add('delete-elem')
 elemNewCatalog2Id.classList.add('delete-elem')
 elemNewCatalog3Id.classList.add('delete-elem')
 
-
+//
 
 // console.log('----------------------------------')
 // console.log(`ID карточки: ${cardId}`)
@@ -200,7 +200,7 @@ async function addToFavorite(id) {
 // ------------------- Путь до карточки -------------------
 const elemPath = document.querySelector('#path')
 function addCardPath(level, id, title) {
-    elemPath.insertAdjacentHTML('beforeend', `<a class="path-back" href="../catalog?level=${level}&id=${id}">${title} > </a>`);
+    elemPath.insertAdjacentHTML('beforeend', `<a class="path-back" href="../catalog?level=${level}&id=${id}">${title} • </a>`);
 }
 
 // ------------------------- Список карточек ----------------------------

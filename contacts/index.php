@@ -30,20 +30,20 @@
     <div class="content-wrap">
         <section class="content">
             <div class="main">
+                <h1 class="header">Контакты</h>
                 <div class="box">
-                    <h2 class="header">Контакты и обратная связь</h2>
+                    <img class="bird" src="img/vecteezy_bird-3d.svg" alt="птичка">
                     <div class="text">
-                        <p>Вы можете связаться с нами по интересующему Вас вопросу, написав нам на E-mail: <a class="text text_link" href="mailto:rastu-igraya@internet.ru" target="_blank">rastu-igraya@internet.ru</a>. Нам будут интересны любые Ваши замечания, предложения или комментарии.</p>
-                        <p>Также сообщаем, что поиск на сайте и мобильная версия сайта находятся в разработке. Пожалуйста, следите за нашими обновлениями.</p>
+                        <img src="img/image.svg" alt="фон">
+                        <div class="info" >Свяжитесь с нами. Напишите на E-mail:<br> rastu-igraya@internet.ru. Нам будут<br> интересны любые ваши замечания,<br> предложения или комментарии.</div>
                     </div>
                 </div>
             </div>
         </section>
     </div>
-    <div class="finish"></div>
+   
 
-    <?php 
-     include '../footer/index.php'; ?>
+    <?php include '../footer/index.php'; ?>
 </body>
 
 </html>
