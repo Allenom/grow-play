@@ -7,9 +7,9 @@
   margin-left: 10%;
   margin-right: 10%;
   margin-bottom: 40px;
-  font-family: "Roboto";
+  font-family: "Montserrat", sans-serif;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 500;
   font-size: 16px;
   color: #000;
 }
@@ -61,8 +61,8 @@
 .white_background {
   width: 218px;
   height: 214px;
-  background: #ffffff;
-  border-radius: 15px;
+  background: #FFFFFF;
+  border-radius: 30px;
   padding: 6px;
   position: absolute;
   left: 19px;
@@ -81,7 +81,7 @@
 }
 
 .actions {
-  width: 225px;
+  width: 250px;
   padding-left: 19px;
 }
 
@@ -97,19 +97,25 @@
 
 .product_link {
   text-decoration: none;
-  font-family: "Roboto";
+  font-family: "Montserrat", sans-serif;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 500;
   font-size: 20px;
   line-height: 15px;
   /* identical to box height, or 75% */
   color: #000000;
-  padding-top: 23px;
+  padding-top: 24px;
+  padding-bottom: 16px;
 }
 
 .favorite_btn {
   border: none;
-  background-color: #ffffff;
+  background-color: #FFFFFF;
+  position: relative;
+  top: -45px;
+  right: 12px;
+  z-index: 100;
+  background: none;
 }
 
 .favorite_btn:hover {
@@ -124,15 +130,15 @@
 
 .btn_finish {
   width: 222px;
-  height: 43px;
-  background: #daf4ff;
-  border-radius: 15px;
-  font-family: "Roboto";
+  height: 44px;
+  background: #DAF4FF;
+  border-radius: 100px;
+  font-family: "Montserrat", sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 20px;
   line-height: 23px;
-  color: #0d47aa;
+  color: #0D47AA;
   display: flex;
   align-items: center;
   justify-content: center;

@@ -67,7 +67,7 @@
         <p id="identifi-id"><?php echo $_GET['id'] ?></p>
 
         <div class="path-wrap" id="path">
-            <a class="path-back" href="../main">Главная &gt</a>
+            <a class="path-back" href="../main">Главная &#8226;</a>
         </div>
 
         <h1 class="title1" id="title1"></h1>
