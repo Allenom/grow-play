@@ -27,7 +27,7 @@
     <div class="content-wrap">
         <section class="content">
             <div class="main">
-                    <h2 class="title">Ошибка 404</h2>
+                    <h2 class="heading">Ошибка 404</h2>
                   <div class="wrap">
                        <div class="img">
                             <img class="img-penguin"srcset="" src="./img/vecteezy_bird-3d-clipart_15693434_204.png" alt="картинка">
