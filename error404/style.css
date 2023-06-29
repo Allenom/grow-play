@@ -24,7 +24,7 @@
 
 }
 
-.title {
+.heading {
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 700;
@@ -216,7 +216,7 @@ text-align: center;
 
     
     } 
-     .title{
+     .heading{
         font-size: 28px;
     }
      .img{
@@ -269,7 +269,7 @@ text-align: center;
        max-height: 100%; 
     
     } 
-     .title{
+     .heading{
         font-size: 24px;
         padding-top: 40px;
     }
