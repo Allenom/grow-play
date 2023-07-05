@@ -5,7 +5,7 @@
 }
 .content-wrap {
         width: 1440px;
-        height: 673px;
+        height: 683px;
         max-height: 100%;
         margin: 0 auto;
         padding: 0 auto;
@@ -50,7 +50,7 @@
 .img-penguin{
   position: absolute;
     top: 0px;
-    left: -5px;
+    left: 13%;
     width: 320px;
     max-width: 100%;
     margin: 0 auto;
@@ -60,7 +60,7 @@
 
 .background-img{
     position: absolute;
-    left: 20%;
+    left: 33%;
     text-align: left center;
     padding-left: 0px;
     max-width: 100%;
@@ -81,7 +81,7 @@
     position: absolute;
     width: 395px;
     max-width: 100%;
-    left: 33%;
+    left: 47%;
     top: 40px;
 }
 
@@ -94,7 +94,7 @@
     width: 206px;
     height: 60px;
     max-width: 100%;
-    left: 46%;
+    left: 45%;
     margin-top: 25%;
     margin-bottom: 80px;
 }
@@ -125,7 +125,7 @@ text-align: center;
     display: none;
    }
       .img{
-            background-image: url("./img/фон\ 2.png");
+            background-image: url("./img/фон\ \(2\).png");
          
             width: 559px;
             height: 339px;
@@ -147,6 +147,7 @@ text-align: center;
     .btn{
         margin-top: 370px;
         margin-bottom: 131px;
+        left: 49%
     }
     .content-wrap{
         height:740px;
@@ -158,6 +159,7 @@ text-align: center;
 
 @media screen and (max-width: 1024px){
     .content-wrap {
+        width: 1440px;
         height: 920px;
         margin: 0 auto;
         padding: 0 auto;
@@ -174,6 +176,7 @@ text-align: center;
     .wrap{
         width: 560px;
     max-width: 100%;
+    height: 100%;
     max-height: 100%;
     margin: 0 auto;
     padding: 0 auto;
@@ -196,8 +199,10 @@ text-align: center;
       }
 
       .btn{
+      width: 206px;
+      height: 60px;
       margin-top: 200px;
-      left: 0;
+      left: 41%;
       right: 0;
       margin-bottom: 186px;
       }
@@ -225,7 +230,7 @@ text-align: center;
      padding-top: 238px;
      max-width: 100%;
      background-size: 100% 100%;
-
+     left: 17%
     }
      .img-penguin{
      top: 180px;
@@ -235,9 +240,12 @@ text-align: center;
      transform: rotate(40deg); 
     }
    .btn{
+    Width: 206px;
+    height: 60px;
     margin-top: 18%;
     margin-bottom: 110px;
     padding: 15px, 41px, 15px, 41px;
+    left: 38%
     }
    
    .text{
@@ -256,7 +264,7 @@ text-align: center;
 
  @media screen and (max-width: 360px){
     .content-wrap{
-        height: 511px;
+        height: 517px;
         max-height: 100%;
     }
     
@@ -280,6 +288,7 @@ text-align: center;
      max-width: 100%;
      margin-bottom: 0px;
      background-size: 100% 100%;
+     left: 0;
 }
 
 
@@ -298,7 +307,8 @@ text-align: center;
     width: 164px;
     height: 44px;
     Padding: 16px, 32px, 16px, 32px;
-
+    padding: 0px;
+    left: 29%;
 }
 
 

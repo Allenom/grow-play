@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Расту, играя! 404</title>
+    <title>Расту, играя! Ошибка 404</title>
 
     <link rel="stylesheet" href="./style.css"> <!-- Ваши стили -->
     <link rel="stylesheet" href="../header/style.css"> <!-- Стили хэдера -->
@@ -30,7 +30,7 @@
                     <h2 class="heading">Ошибка 404</h2>
                   <div class="wrap">
                        <div class="img">
-                            <img class="img-penguin"srcset="" src="./img/vecteezy_bird-3d-clipart_15693434_204.png" alt="картинка">
+                            <img class="img-penguin" src="./img/vecteezy_bird-3d-clipart_15693434_204.png" alt="картинка">
                            <img class="background-img"src="./img/фон.png" alt="фон">
                            <p class="text">Страницы по этому адресу нет. Проверьте адрес или перейдите на главную страницу.</p>
 
@@ -39,12 +39,10 @@
                                <p class="text-link"><a class="link" href="#" target="_blank">На главную</a></p>
                            </button>
                   </div>
-            
         
               </div>
         </section>
     </div>
-
     <?php include '../footer/index.php'; ?>
 </body>
 
