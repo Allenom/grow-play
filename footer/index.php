@@ -1,3 +1,4 @@
+<!-- <link rel="stylesheet" href="./style.css"> -->
 <footer class="footer-wrap <?php echo $footer_class; ?> ">
 <div class="footer_wraper">
 <ul class="footer-list">

@@ -46,8 +46,10 @@
                     <!-- <img src="./img/background_ellipse.svg" alt="ellipse">
                     <img src="./img/pencil.svg" alt="/" class="change-pencil" id="change-name-pencil"> -->
 
-                    <!-- Разрешение 1920, 1440... -->
+                    <!-- Разрешение 1920  Фрагмент кода --> 
                      <img class="chick_pic" src="./img/chicken.svg" alt="chick">
+                       <img src="./img/chicken.svg" alt="chick">
+                    
                     <div class="change_box">
                         <div class="arrow_pic"> <img src="./img/arrow.png" alt="arrow"></div>
                         <div class="background_box">
@@ -59,6 +61,7 @@
                 </div>
                 <!-- ------------- -->
 
+                <!-- Разрешение 1024, 768, 360 Фрагмент кода -->
                 <div class="block_none ">
                     <div>
                         <div class="btn_col">
@@ -74,7 +77,7 @@
                         <img class="chick_positioning" src="./img/chick.svg" alt="chick_pic">
                     </div>
                 </div>
-
+                <!-- ------------ -->
                
 
 

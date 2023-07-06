@@ -3,11 +3,12 @@
 $directoryCardsImg = "./cardsimg/";
 $directoryCatalogsImg = "./catalogsimg/";
 $needFeedbackModeration = 1; // 0 - отзывы необходимо отправлять на модерацию; 1 - отзывы принимаются без модерирования
+$countSearchQuery = 6; //Количество отражаемых поисковых запросов
 
 // ------------------- Подключение к БД ---------------------
 
 // $connection = mysqli_connect('localhost', 'root', '', 'stoevamk_db');
-// $connection = mysqli_connect('localhost', 'stoevamk_db', 'Y15xj%*k', 'stoevamk_db');
+$connection = mysqli_connect('localhost', 'stoevamk_db', 'Y15xj%*k', 'stoevamk_db');
 
 
 if ($connection == false) {
@@ -16,7 +17,6 @@ if ($connection == false) {
     exit(); //Если база не подключена, дальше весь код не выполняется
 }
 // ------------------------------------------------------------
-
 
 
 // setcookie('userid', "2", 0x7FFFFFFF);
@@ -70,7 +70,7 @@ if (isset($_GET['loginmail'])) {
     else {
         $code = substr(md5(rand()), 0, 4);
         if (mail($_GET['loginmail'], 'Регистрация на сайте Расту, играя', "Код подтверждения для регистрации на сайте:\n" . $code . "\n\nРегистрируясь на платформе https://rastu-igraya.ru/, вы даете согласие на обработку ваших персональных данных.\n
-            
+
             Политика конфиденциальности
 
             1. Общие положения
@@ -277,10 +277,7 @@ if (isset($_GET['cookies']) && $_GET['cookies'] == '0') {
         'name' => 'Войти',
         'email' => 'email',
         'countFavorites' => 'Избранное',
-        'search' => [],
     ];
-
-    $countSearchQuery = 8; //Количество отражаемых поисковых запросов
 
     if (isset($_COOKIE["userid"]) && isset($_COOKIE["usercode"])) { //Если куки содержат userid и usercode
         $user = false;
@@ -290,23 +287,6 @@ if (isset($_GET['cookies']) && $_GET['cookies'] == '0') {
             $visitor['name'] = $user['name'];
             $visitor['email'] = $user['email'];
             $visitor['countFavorites'] = mysqli_fetch_assoc(mysqli_query($connection, "SELECT COUNT(*) FROM `users_cards` WHERE `users_cards`.`users_id` = " . $_COOKIE["userid"]))["COUNT(*)"];
-            $user['search_id'] != "" ? $userSearchListId = explode(' ', $user['search_id']) : $userSearchListId = [];
-            for ($i = 0; $i < count($userSearchListId) && $i < $countSearchQuery; $i++) {
-                $visitor['search'][] = mysqli_fetch_assoc(mysqli_query($connection, "SELECT `text` FROM `search` WHERE `id` = " . $userSearchListId[$i]))['text'];
-            }
-        }
-    }
-
-    if (count($visitor['search']) < $countSearchQuery) {
-        $popularSearch = mysqli_query($connection, "SELECT * FROM `search` ORDER BY `count` DESC LIMIT " . $countSearchQuery);
-
-        while (count($visitor['search']) < $countSearchQuery) {
-            $popularSearchItem = mysqli_fetch_assoc($popularSearch)['text'];
-            $check = 0;
-            foreach ($visitor['search'] as $visitorSearchItem) {
-                if ($popularSearchItem == $visitorSearchItem) $check++;
-            }
-            if ($check == 0) $visitor['search'][] = $popularSearchItem;
         }
     }
 
@@ -933,6 +913,46 @@ if (isset($_GET['favcards']) && $_GET['favcards'] == 'remove' &&  isset($_GET['i
     } else {
         echo json_encode('fail');
     }
+}
+
+
+// -------------------------- Search ----------------------------------------
+
+// ------------------ Получить список для поиска ----------------------------
+
+if (isset($_GET['search']) && $_GET['search'] == "getlist") {
+
+    $popularSearchCatalog1Items = mysqli_query($connection, "SELECT * FROM `catalog1`");
+    while ($popularSearchCatalog1Item = mysqli_fetch_assoc($popularSearchCatalog1Items)) {
+        $searchListAll[] = [
+            'level' => 1,
+            'id' => $popularSearchCatalog1Item['id'],
+            'title' => $popularSearchCatalog1Item['title'],
+        ];
+    }
+
+    $popularSearchCatalog2Items = mysqli_query($connection, "SELECT * FROM `catalog2`");
+    while ($popularSearchCatalog2Item = mysqli_fetch_assoc($popularSearchCatalog2Items)) {
+        $searchListAll[] = [
+            'level' => 2,
+            'id' => $popularSearchCatalog2Item['id'],
+            'title' => $popularSearchCatalog2Item['title'],
+        ];
+    }
+
+    $popularSearchCatalog3Items = mysqli_query($connection, "SELECT * FROM `catalog3`");
+    while ($popularSearchCatalog3Item = mysqli_fetch_assoc($popularSearchCatalog3Items)) {
+        $searchListAll[] = [
+            'level' => 3,
+            'id' => $popularSearchCatalog3Item['id'],
+            'title' => $popularSearchCatalog3Item['title'],
+        ];
+    }
+
+    //Обрезка массива до количества отражаемых поисковых запросов
+    $searchListPop = array_slice($searchListAll, 0, $countSearchQuery);
+    $searchList = [$searchListPop, $searchListAll];
+    echo json_encode($searchList);
 }
 
 
