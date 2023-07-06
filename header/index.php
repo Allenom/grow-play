@@ -111,6 +111,8 @@
         <div class="header-list">
         <div class="header-item" id="header-catalog-btn"><img class="pic_small" src="../header/img/search(1).svg" alt="0" id="header-catalog-btn-img">
                 <span class="header-item-title" id="header-catalog-btn-text"></span>
+            <div class="header-item" id="header-search-btn"><img src="../header/img/search(1).svg" alt="0" id="header-search-btn-img">
+                <span class="header-item-title" id="header-search-btn-text"></span>
             </div>
             <div class="header-item header-delete-elem"><img src="../header/img/search.svg" alt="0">
                 <span class="header-item-title"></span>
@@ -138,7 +140,19 @@
     </section>
 
 
-
-    <!-- <div class="hren"></div> -->
+    <section class="header-delete-elem" id="header-search-wrap">
+        <div class="header-search-background" id="header-search-background"></div>
+        <div class="header-search">
+            <div class="header-search-string">
+                <input class="header-search-input header-search-input-default" id="header-search-input" type="text" placeholder="Поиск">
+                <div class="header-search-btns">
+                    <img class="header-search-find-btn" id="header-search-find-btn" src="../header/img/search_find_btn.svg" alt="Q">
+                    <img class="header-search-stick" src="../header/img/search_stick.svg" alt="|">
+                    <img class="header-search-close-btn" id="header-search-close-btn" src="../header/img/search_close_btn.svg" alt="X">
+                </div>
+            </div>
+            <div class="header-search-options" id="header-search-options"></div>
+        </div>
+    </section>
 
 </div>

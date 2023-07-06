@@ -285,7 +285,7 @@ getVisitor().then(visitor => {
                 titleH1.innerHTML = path.title;
                 elemPath.insertAdjacentHTML('beforeend', `<spam>${path.title}<spam>`)
             }
-            else { elemPath.insertAdjacentHTML('beforeend', `<a class="path-back" href="../catalog?level=${level}&id=${path.id}">${path.title} > </a>`); }
+            else { elemPath.insertAdjacentHTML('beforeend', `<a class="path-back" href="../catalog?level=${level}&id=${path.id}">${path.title} • </a>`); }
         })
     })
         .catch(console.error)
