@@ -48,7 +48,7 @@
 
                     <!-- Разрешение 1920  Фрагмент кода --> 
                      <img class="chick_pic" src="./img/chicken.svg" alt="chick">
-                       <img src="./img/chicken.svg" alt="chick">
+                       <!-- <img src="./img/chicken.svg" alt="chick"> -->
                     
                     <div class="change_box">
                         <div class="arrow_pic"> <img src="./img/arrow.png" alt="arrow"></div>

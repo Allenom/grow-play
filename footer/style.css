@@ -75,8 +75,6 @@
   margin-left: 50px;
 }
 
-<<<<<<< HEAD
-=======
 /* Медиа запросы для адаптивного дизайна веб-страниц */
 
 @media (max-width: 1440px) {
@@ -88,7 +86,6 @@
   }
 }
 
->>>>>>> 1f719706e93655b64a03867d8e1df628cb53968d
 @media (max-width: 1024px) {
   .footer_wraper {
     margin-left: 40px;
@@ -110,11 +107,7 @@
   }
   .footer-wrap {
     padding-top: 20px;
-<<<<<<< HEAD
     min-height: 251px;
-=======
-    min-height: 240px;
->>>>>>> 1f719706e93655b64a03867d8e1df628cb53968d
   }
   .footer_box {
     margin-top: 20px;
@@ -123,13 +116,7 @@
   .copyright_text {
     font-size: 12px;
   }
-<<<<<<< HEAD
-=======
   .footer-list {
     display: block;
   }
-  .header-item {
-    margin-right: 0;
-  }
->>>>>>> 1f719706e93655b64a03867d8e1df628cb53968d
 }

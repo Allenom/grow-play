@@ -109,9 +109,9 @@
             <!-- <p>Раннее развитие малыша</p> -->
         </div>
         <div class="header-list">
-        <div class="header-item" id="header-catalog-btn"><img class="pic_small" src="../header/img/search(1).svg" alt="0" id="header-catalog-btn-img">
-                <span class="header-item-title" id="header-catalog-btn-text"></span>
-            <div class="header-item" id="header-search-btn"><img src="../header/img/search(1).svg" alt="0" id="header-search-btn-img">
+        <!-- <div class="header-item" id="header-catalog-btn"><img class="pic_small" src="../header/img/search(1).svg" alt="0" id="header-catalog-btn-img">
+                <span class="header-item-title" id="header-catalog-btn-text"></span> -->
+            <div class="header-item" id="header-search-btn"><img class="search_pic" src="../header/img/search(1).svg" alt="0" id="header-search-btn-img">
                 <span class="header-item-title" id="header-search-btn-text"></span>
             </div>
             <div class="header-item header-delete-elem"><img src="../header/img/search.svg" alt="0">

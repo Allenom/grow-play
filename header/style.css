@@ -565,4 +565,14 @@
     padding-top: 16px;
     padding-bottom: 20px;
   }
+  .search_pic {
+    width: 28px;
+    height: 28px;
+  }
+  .header-item {
+    margin-right: 16px;
+  }
+  .header-item-title {
+    margin-left: 0px;
+  }
 }

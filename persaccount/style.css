@@ -284,12 +284,11 @@
     height: 148px;
   }
   .main-background {
-    min-height: calc(100vh - 428px);
+    min-height: calc(100vh - 439px);
   }
   .main-background {
     margin-bottom: 80px;
   }
-}
 }
 
 /* .change-textarea-wrap {
