@@ -1,0 +1,132 @@
+* {
+    margin: 0 auto;
+    padding: 0 auto;
+    box-sizing: border-box;
+
+}
+.content-wrap{
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 auto;
+    width: 100%;
+}
+
+.container{
+ 
+    background: #9FE0FC;
+    border-radius: 0px 0px 20px 20px;
+}
+
+.main{
+    padding-left:10.5%;
+    padding-right: 10.5%;
+    padding-bottom: 40px;
+}
+
+.heading{
+    font-family: 'Montserrat';
+font-style: normal;
+font-weight: 700;
+font-size: 44px;
+line-height: 40px;
+color: #0D47AA;
+padding-top: 60px;
+padding-bottom: 40px;
+}
+
+.subtitle{
+    font-family: 'Montserrat';
+font-style: normal;
+font-weight: 800;
+font-size: 20px;
+line-height: 24px;
+color: #0D47AA;
+padding-bottom: 20px;
+}
+
+p{
+    padding-bottom: 20px;
+    font-family: 'Montserrat';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 160%;
+color: #0D47AA;
+}
+.padding{
+    padding-bottom: 40px;
+    font-family: 'Montserrat';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 160%;
+color: #0D47AA;
+}
+.link-a{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 24px;
+    color: #0D47AA;
+    text-decoration: none;
+ 
+}
+
+
+
+
+/* Адаптив */
+@media screen and (max-width: 1920px){
+    .main{
+        padding-left: 200px;
+        padding-right: 200px;
+    }
+
+}
+@media screen and (max-width: 1024px){
+    .main{
+        padding-left: 40px;
+        padding-right: 40px;
+        padding-bottom: 40px;
+    }
+    .heading{
+    padding-top: 40px;
+    padding-bottom: 30px;
+    }
+    
+}
+
+@media screen and (max-width: 768px){
+    .main{
+        padding-left: 40px;
+        padding-right: 40px;
+        padding-bottom: 40px;
+    }
+    .heading{
+        font-size: 32px;
+    padding-top: 60px;
+    padding-bottom: 40px;
+    }
+    
+}
+
+@media screen and (max-width: 360px){
+    .main{
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-bottom: 40px;
+    }
+    .heading{
+        font-size: 24px;
+      padding-top: 30px;
+     padding-bottom: 20px;
+    }
+
+    .padding{
+        padding-bottom: 20px;
+    }
+    .subtitle{
+        font-size: 18px;
+    }
+}

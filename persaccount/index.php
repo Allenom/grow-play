@@ -45,8 +45,9 @@
                     </div> -->
                     <!-- <img src="./img/background_ellipse.svg" alt="ellipse">
                     <img src="./img/pencil.svg" alt="/" class="change-pencil" id="change-name-pencil"> -->
-                       <img src="./img/chicken.svg" alt="chick">
-                    
+
+                    <!-- Разрешение 1920, 1440... -->
+                     <img class="chick_pic" src="./img/chicken.svg" alt="chick">
                     <div class="change_box">
                         <div class="arrow_pic"> <img src="./img/arrow.png" alt="arrow"></div>
                         <div class="background_box">
@@ -56,6 +57,27 @@
                         </div>
                     </div>
                 </div>
+                <!-- ------------- -->
+
+                <div class="block_none ">
+                    <div>
+                        <div class="btn_col">
+                            <button class="btn_account">Личные данные</button>
+                            <button class="btn_account">Изменить пароль</button>
+                            <button class="btn_account" id="logout">Выйти из аккаунта</button>
+                        </div>
+                        <div class="arrow_box">
+                            <img class="arrow_small" src="./img/фон 1 2.png" alt="arrow_img">
+                        </div>
+                    </div>
+                    <div>
+                        <img class="chick_positioning" src="./img/chick.svg" alt="chick_pic">
+                    </div>
+                </div>
+
+               
+
+
                 <!-- <div class="change-item">
                     <div class="change-textarea-wrap">
                         <div class="change-textarea" id="change-email-textarea" contenteditable="true"></div>

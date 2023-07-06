@@ -7,7 +7,7 @@ $needFeedbackModeration = 1; // 0 - отзывы необходимо отпра
 // ------------------- Подключение к БД ---------------------
 
 // $connection = mysqli_connect('localhost', 'root', '', 'stoevamk_db');
-$connection = mysqli_connect('localhost', 'stoevamk_db', 'Y15xj%*k', 'stoevamk_db');
+// $connection = mysqli_connect('localhost', 'stoevamk_db', 'Y15xj%*k', 'stoevamk_db');
 
 
 if ($connection == false) {

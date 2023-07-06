@@ -69,8 +69,40 @@
 .footer_wraper {
   margin-left: auto;
   margin-right: auto;
-  max-width: 1200px;
+  max-width: 1440px;
 }
 .footer_left {
   margin-left: 50px;
+}
+
+@media (max-width: 1024px) {
+  .footer_wraper {
+    margin-left: 40px;
+  }
+  .copyright_text {
+    margin-right: 40px;
+  }
+  .footer-item {
+    margin-right: 169px;
+  }
+}
+@media (max-width: 360px) {
+  .footer_wraper {
+    margin-left: 20px;
+  }
+  .footer-item {
+    padding-bottom: 12px;
+    width: 273px;
+  }
+  .footer-wrap {
+    padding-top: 20px;
+    min-height: 251px;
+  }
+  .footer_box {
+    margin-top: 20px;
+    display: block;
+  }
+  .copyright_text {
+    font-size: 12px;
+  }
 }
