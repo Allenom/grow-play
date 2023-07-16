@@ -103,7 +103,7 @@ function formPopCards(id, title, img, rating, numBackColor) {
     </a>
     <div class="actions start">
         <a class="product_link" href="../card?id=${id}">${title}</a>
-        <img class="favorite_btn" id="favorite-card-btn" idCard="${id}" src="./img/like_btn.svg" alt="favorite">
+        <img class="favorite_btn" id="favorite-card-btn" idCard="${id}" src="./img/like_1.svg" alt="favorite">
     </div>
     <div class="stars">
         <img src="./img/rating ${rating}.svg" alt="${rating} stars">

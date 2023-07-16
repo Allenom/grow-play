@@ -24,7 +24,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+
     <link rel="icon" href="../favicon.svg" type="image/x-icon">
 
     <!-- Yandex.Metrika counter -->
@@ -61,39 +61,30 @@
 
     <?php include '../header/index.php'; ?>
     <main class="main-wrap">
-        <h2 class="titles">Популярные категории</h2>
         <section class="container">
-            <div class="itc-slider" id="itc-slider" data-autoplay="true" data-interval="5000" data-loop="true">
-                <div class="itc-slider__wrapper">
-                    <div class="itc-slider__items" id="itc-slider__items"></div>
-                    <div class="itc-slider__control-panel">
-                        <button class="itc-slider__btn itc-slider__btn_prev"><img src="../itc-slider/btn_prev.svg" alt="<="></button>
-                        <ol class="itc-slider__indicators">
-                            <li class="itc-slider__indicator" data-slide-to="0"></li>
-                            <li class="itc-slider__indicator" data-slide-to="1"></li>
-                            <li class="itc-slider__indicator" data-slide-to="2"></li>
-                            <li class="itc-slider__indicator" data-slide-to="3"></li>
-                            <li class="itc-slider__indicator" data-slide-to="4"></li>
-                            <li class="itc-slider__indicator" data-slide-to="5"></li>
-                            <li class="itc-slider__indicator" data-slide-to="6"></li>
-                            <li class="itc-slider__indicator" data-slide-to="7"></li>
-                            <li class="itc-slider__indicator" data-slide-to="8"></li>
-                            <li class="itc-slider__indicator" data-slide-to="9"></li>
-                        </ol>
-                        <button class="itc-slider__btn itc-slider__btn_next"><img src="../itc-slider/btn_next.svg" alt="<="></button>
-                    </div>
-                </div>
-            </div>
+        <div class="main-block_image">
+        <img width="100%" height="764px" top= "104px"src="./img/banner.svg" alt="cover">
+        <button class="btn">Смотреть всё</button>
+        </div>
         </section>
-        <h2 class="titles">Возможно, вам понравятся</h2>
-
+        <section class="container_0">
+        <div class="main-block_image_0">
+        <img src="./img/Rect.svg" alt="cover">
+        </div>
+        </section>
+        <section class="container_2">
+        <div class="main-block_image_2">
+        <img width="100%" height="764px" src="./img/banner_2.svg" alt="cover_2">
+        </div>
+        </section>
+        <h2 class="titles">Популярные материалы</h2>
         <section class="card-list" id="card-list"></section>
-
         <div class="show-more" id="show-more"> Показать ещё</div>
         <section class="bottom-text">
-            <p> &#34Расту, играя!&#34 – платформа с развивающими материалами для детей дошкольного и младшего школьного возраста. Представленные здесь печатные ресурсы помогут детям научиться различать цвета и формы, определять свойства и признаки предметов, познакомят с цифрами и буквами, сформируют знания об окружающем мире, его закономерностях и взаимосвязях.</p>
-            <p> На сайте размещено более 2000 раскрасок, прописей, задач по математике, головоломок, также здесь вы найдете стихи и песни для детей, загадки, колыбельные, поздравления.</p>
-            <p> Выполнение наших заданий – замечательный способ развить мелкую моторику, усидчивость, логическое мышление, внимание, память, речь, воображение, а разнообразие предложенных упражнений поддержит интерес к занятиям!</p>
+            <p> «Расту, играя!» — это платформа с развивающими материалами для детей дошкольного и младшего школьного возраста.</p>
+            <p>Представленные здесь печатные ресурсы помогут детям научиться различать цвета и формы, определять свойства и признаки предметов, познакомят с цифрами и буквами, сформируют знания об окружающем мире, его закономерностях и взаимосвязях.</p>
+            <p>На сайте размещено множество раскрасок, прописей, задач по математике, головоломок, также у нас вы найдете стихи и песни для детей, загадки, колыбельные, поздравления.</p>
+            <p>Выполняя задания, ребенок в легкой, игровой форме разовьет мелкую моторику, усидчивость, логическое мышление, внимание, память, речь, воображение, а разнообразие предложенных упражнений поддержит интерес к занятиям!</p>
         </section>
 
     </main>
